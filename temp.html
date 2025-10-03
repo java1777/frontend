@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DataSite.uz - Ma'lumotlar Markazi</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        transition: opacity 0.3s;
+      }
+
+      nav a:hover {
+        opacity: 0.8;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 100px 20px;
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+      }
+
+      .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 15px 40px;
+        background: white;
+        color: #667eea;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: transform 0.3s;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 60px 20px;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 50px;
+        color: #333;
+      }
+
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+      }
+
+      .service-card {
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+      }
+
+      .service-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .service-card h3 {
+        color: #667eea;
+        margin: 20px 0;
+        font-size: 24px;
+      }
+
+      .icon {
+        font-size: 48px;
+        color: #667eea;
+      }
+
+      .about {
+        background: #f8f9fa;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .stat-card {
+        text-align: center;
+        padding: 30px;
+        background: white;
+        border-radius: 10px;
+      }
+
+      .stat-number {
+        font-size: 48px;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .form-group input,
+      .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .form-group textarea {
+        height: 150px;
+        resize: vertical;
+      }
+
+      .submit-btn {
+        width: 100%;
+        padding: 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+      }
+
+      footer {
+        background: #2d3748;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      footer a {
+        color: #667eea;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">📊 DataSite.uz</div>
+        <ul>
+          <li><a href="#home">Bosh sahifa</a></li>
+          <li><a href="#services">Xizmatlar</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#contact">Aloqa</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <h1>DataSite.uz ga xush kelibsiz!</h1>
+      <p>O'zbekistondagi eng yaxshi ma'lumotlar markazi</p>
+      <a href="#contact" class="btn">Biz bilan bog'laning</a>
+    </section>
+
+    <section class="container" id="services">
+      <h2 class="section-title">Bizning xizmatlarimiz</h2>
+      <div class="services">
+        <div class="service-card">
+          <div class="icon">💾</div>
+          <h3>Ma'lumotlar saqlash</h3>
+          <p>
+            Xavfsiz va ishonchli ma'lumotlar saqlash xizmati. Sizning
+            ma'lumotlaringiz bizda xavfsiz!
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon">📈</div>
+          <h3>Analitika</h3>
+          <p>
+            Ma'lumotlarni tahlil qilish va vizualizatsiya qilish xizmatlari.
+            Professional hisobotlar tayyorlash.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🔒</div>
+          <h3>Xavfsizlik</h3>
+          <p>
+            Yuqori darajadagi xavfsizlik va shifrlash texnologiyalari. 24/7
+            monitoring.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon">☁️</div>
+          <h3>Cloud xizmatlari</h3>
+          <p>
+            Bulutli texnologiyalar asosida ma'lumotlarni boshqarish va saqlash.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🚀</div>
+          <h3>Tez ishlash</h3>
+          <p>
+            Yuqori tezlikda ma'lumotlarga kirish va qayta ishlash imkoniyati.
+          </p>
+        </div>
+        <div class="service-card">
+          <div class="icon">💬</div>
+          <h3>24/7 Qo'llab-quvvatlash</h3>
+          <p>
+            Doimo mijozlarimiz xizmatida. Har qanday vaqtda yordam berishga
+            tayyormiz.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">Biz haqimizda</h2>
+        <p
+          style="
+            text-align: center;
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+          "
+        >
+          DataSite.uz - O'zbekistonda faoliyat ko'rsatuvchi yetakchi ma'lumotlar
+          markazi. Biz 2020-yildan beri mijozlarimizga yuqori sifatli xizmatlar
+          ko'rsatib kelmoqdamiz. Bizning maqsadimiz - O'zbekiston korxonalariga
+          zamonaviy ma'lumotlar boshqaruvi texnologiyalarini taqdim etish.
+        </p>
+
+        <div class="stats">
+          <div class="stat-card">
+            <div class="stat-number">500+</div>
+            <p>Faol mijozlar</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10TB+</div>
+            <p>Saqlangan ma'lumotlar</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">99.9%</div>
+            <p>Uptime kafolati</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">24/7</div>
+            <p>Texnik qo'llab-quvvatlash</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <h2 class="section-title">Biz bilan bog'laning</h2>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Ism va Familiya</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefon raqam</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+998 90 123 45 67"
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Xabar</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Xabar yuborish</button>
+      </form>
+    </section>
+
+    <footer>
+      <h3>DataSite.uz</h3>
+      <p>O'zbekiston, Toshkent shahar</p>
+      <p>Email: info@datasite.uz | Tel: +998 71 123 45 67</p>
+      <p style="margin-top: 20px">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> |
+        <a href="#">Telegram</a>
+      </p>
+      <p style="margin-top: 20px">
+        &copy; 2024 DataSite.uz. Barcha huquqlar himoyalangan.
+      </p>
+    </footer>
+    <a href="server.html" style="background-color: greenyellow"
+      >Keyingi saxifaga otish</a
+    >
+  </body>
+</html>
