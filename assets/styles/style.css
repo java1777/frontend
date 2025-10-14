@@ -1,0 +1,295 @@
+@import "./fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Rubik";
+  font-weight: 400;
+  background: #f1f1f1;
+}
+
+.wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 35px 15px 45px;
+}
+
+.btn {
+  max-width: 219px;
+  width: 100%;
+  background: #3fa5d5;
+  border-radius: 30px;
+  padding: 7px;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 19px;
+  display: block;
+  text-align: center;
+  transition: all 400ms;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background: #2a86b1;
+}
+
+.header-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 30px 0;
+  width: 100px;
+  transition: all 400ms;
+  overflow: hidden;
+  z-index: 100;
+}
+
+.header-nav:hover {
+  width: 234px;
+}
+
+.header-list {
+  width: max-content;
+}
+
+.header-list li a {
+  display: flex;
+  align-items: center;
+  color: #939393;
+  font-size: 18px;
+  transition: all 400ms;
+  line-height: 21px;
+}
+
+.header-list li a:hover {
+  color: #2a86b1;
+}
+
+.header-list li {
+  margin: 0 35px 55px 30px;
+}
+
+.header-list li:last-child {
+  margin-bottom: 0;
+}
+
+.header-list li .fas {
+  margin-right: 30px;
+  font-size: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo,
+.header-ava {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background: url(../img/Фон.png) no-repeat center / cover #ffffff;
+  height: 500px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  margin-left: 62px;
+  max-width: 332px;
+  width: 100%;
+}
+
+.header-title {
+  color: #464748;
+  font-size: 50px;
+  line-height: 59px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.header-title::before {
+  content: "";
+  width: 100px;
+  height: 50px;
+  background-color: #3fa5d5;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.header-desc {
+  color: #696868;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 25px;
+}
+
+.service {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.service-card {
+  max-width: 255px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 24px 18px 19px;
+  border-radius: 15px;
+  height: 338px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-card span {
+  color: #2a86b1;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.info-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #686868;
+  line-height: 23px;
+  margin-bottom: 22px;
+  margin-left: 15px;
+}
+
+.info {
+  max-width: 825px;
+  width: 100%;
+}
+
+.info-text p {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  color: #545454;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.info-text p:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+article {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news {
+  max-width: 255px;
+  width: 100%;
+}
+
+.news-wrap a {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.news-wrap a:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.news-desc {
+  margin-left: 15px;
+}
+
+.news-desc span {
+  color: #323232;
+  font-size: 17px;
+  line-height: 17.7px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.news-desc p {
+  color: #000000;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.footer {
+  background-color: #3fa5d5;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.footer-wrap {
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo a {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  color: #ffffff;
+}
+
+.footer-contact a {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-contact a {
+  color: #ffffff;
+}
+
+.footer-contact a:first-of-type {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 15px;
+}
+
+.footer-contact a:last-of-type {
+  font-size: 16px;
+  line-height: 19px;
+}
