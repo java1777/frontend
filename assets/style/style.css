@@ -1,0 +1,302 @@
+@import "./fonts.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 38.5px 80px;
+}
+
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.header-logos {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-logo img {
+  height: 40px;
+}
+
+.header-logo-mac img {
+  height: 30px;
+}
+
+.header-list {
+  display: flex;
+  gap: 33px;
+  align-items: center;
+}
+
+.header-list a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.header-list a:hover {
+  color: #2ab135;
+}
+
+.header-list img {
+  width: 12px;
+  height: 12px;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.btn {
+  width: 156px;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
+  background: #2ab135;
+  color: #fff;
+  border-color: #2ab135;
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+
+.info-left {
+  max-width: 600px;
+  width: 100%;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 24px;
+}
+
+.info-texts {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #878c91;
+  margin-bottom: 40px;
+  max-width: 557px;
+}
+
+.schedule-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: #000;
+  border-radius: 50px;
+  font-size: 16px;
+  color: #fff;
+  transition: all 0.3s;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.schedule-btn:hover {
+  background: #2ab135;
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(42, 177, 53, 0.3);
+}
+
+.schedule-btn img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s;
+}
+
+.schedule-btn:hover img {
+  transform: translateX(6px);
+}
+
+.section-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+.info-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 588px;
+  width: 100%;
+}
+
+
+.card1 {
+  width: 303px;
+  height: 275px;
+  position: relative;
+  border-radius: 1000px 20px 20px 20px;
+  background: #f5f5f5;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.card-circle {
+  position: absolute;
+  width: 108px;
+  height: 108px;
+  top: -35px;
+  right: 20px;
+  z-index: 3;
+}
+
+.card-main {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1000px 20px 20px 20px;
+}
+
+
+.card2 {
+  width: 253px;
+  min-height: 190px;
+  background: #f8f9fa;
+  border-radius: 20px;
+  padding: 38px 25px 30px 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-top: 85px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card2 h3 {
+  font-weight: 700;
+  font-size: 84px;
+  line-height: 1.2;
+  color: #000;
+}
+
+.card2-line {
+  width: 211px;
+  height: 6.65px;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #000000 50%,
+    #d9d9d9 50%,
+    #d9d9d9 100%
+  );
+  border: none;
+  display: block;
+  border-radius: 3px;
+}
+
+.card2 p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5c5d5f;
+}
+
+
+.card3 {
+  width: 588px;
+  min-height: 216px;
+  background: #010205;
+  border-radius: 20px;
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+  flex-basis: 100%;
+}
+
+.card3 h3 {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 126%;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card3 p {
+  font-family: "Plus Jakarta Sans";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  max-width: 280px;
+}
+
+.card3 img {
+  position: absolute;
+  bottom: 30px;
+  right: 35px;
+  max-width: 200px;
+  height: auto;
+}
+
+.service {
+
+}
